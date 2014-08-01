@@ -2,10 +2,10 @@ package com.rarnu.devlib.base.adapter;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.support.v4.widget.CursorAdapter;
 import android.util.SparseIntArray;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CursorAdapter;
 import com.rarnu.devlib.component.intf.CombinedDragListener;
 
 import java.util.ArrayList;

@@ -1,8 +1,10 @@
 package com.rarnu.devlib.base.adapter;
 
+import android.annotation.TargetApi;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.os.Build;
 import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
@@ -28,6 +30,7 @@ public abstract class FragmentPagerAdapter extends PagerAdapter {
     public void startUpdate(ViewGroup container) {
     }
 
+    @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         if (mCurTransaction == null) {
